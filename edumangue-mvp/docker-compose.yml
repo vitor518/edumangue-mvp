@@ -1,0 +1,28 @@
+# Produção simplificada: Postgres + Django (gunicorn) + Nginx servindo o React.
+# Uso: cp .env.docker.example .env && docker compose up --build
+# Depois: docker compose exec backend python manage.py seed_demo   (opcional: dados de demonstração)
+#         docker compose exec backend python manage.py createsuperuser
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: edumangue
+      POSTGRES_USER: edumangue
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes: [pgdata:/var/lib/postgresql/data]
+  backend:
+    build: ./backend
+    environment:
+      DJANGO_DEBUG: "0"
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY}
+      DJANGO_ALLOWED_HOSTS: ${DJANGO_ALLOWED_HOSTS}
+      DJANGO_SSL_REDIRECT: ${DJANGO_SSL_REDIRECT:-0}   # 1 quando houver HTTPS na frente
+      DATABASE_URL: postgres://edumangue:${POSTGRES_PASSWORD}@db:5432/edumangue
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+    depends_on: [db]
+  frontend:
+    build: ./frontend
+    ports: ["8080:80"]
+    depends_on: [backend]
+volumes:
+  pgdata:

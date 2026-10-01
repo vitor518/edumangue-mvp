@@ -1,0 +1,125 @@
+{
+  "quiz": {
+    "perguntas": [
+      {
+        "enunciado": "Qual é a principal característica das árvores de mangue?",
+        "opcoes": [
+          "Produzem frutos comestíveis para a maioria dos animais.",
+          "Têm folhas que mudam de cor no outono.",
+          "Possuem raízes que crescem para cima, chamadas pneumatóforos.",
+          "São árvores de pequeno porte que não ultrapassam 2 metros de altura."
+        ],
+        "correta": 2,
+        "explicacao": "Os pneumatóforos ajudam as árvores de mangue a respirar em solos alagados e com pouco oxigênio."
+      },
+      {
+        "enunciado": "O caranguejo-uçá, uma espécie comum em manguezais, é conhecido por:",
+        "opcoes": [
+          "Ser um dos maiores caranguejos de mangue do Brasil.",
+          "Construir suas tocas em formato de espiral.",
+          "Sua capacidade de voar curtas distâncias.",
+          "Ter uma coloração azul brilhante."
+        ],
+        "correta": 0,
+        "explicacao": "O caranguejo-uçá desempenha um papel fundamental no ecossistema, pois suas tocas ajudam a oxigenar o solo do mangue."
+      },
+      {
+        "enunciado": "Qual a importância dos manguezais para o meio ambiente?",
+        "opcoes": [
+          "São responsáveis pela produção da maior parte do oxigênio do planeta.",
+          "Ajudam a regular o clima global, absorvendo o excesso de calor.",
+          "São a principal fonte de água potável para muitas cidades costeiras.",
+          "Funcionam como um 'berçário' para diversas espécies marinhas."
+        ],
+        "correta": 3,
+        "explicacao": "Cerca de 75% dos peixes comercialmente importantes dependem dos manguezais em alguma fase de suas vidas."
+      },
+      {
+        "enunciado": "Qual das seguintes aves é frequentemente encontrada em manguezais?",
+        "opcoes": [
+          "Pinguim",
+          "Guará",
+          "Avestruz",
+          "Pombo-correio"
+        ],
+        "correta": 1,
+        "explicacao": "A cor vermelha vibrante dos guarás vem dos pigmentos dos caranguejos que eles comem."
+      },
+      {
+        "enunciado": "O que é 'litter', no contexto de um manguezal?",
+        "opcoes": [
+          "Um tipo específico de alga que cresce nas raízes das árvores de mangue.",
+          "O som que os caranguejos fazem ao se moverem pela lama.",
+          "A camada de folhas, galhos e outros detritos orgânicos que se acumulam no solo.",
+          "Uma doença que afeta as árvores de mangue."
+        ],
+        "correta": 2,
+        "explicacao": "O 'litter' é a base da cadeia alimentar do manguezal, fornecendo nutrientes para muitos organismos."
+      }
+    ]
+  },
+  "memoria": {
+    "pares": [
+      {
+        "nome": "Caranguejo",
+        "imagem": "🦀"
+      },
+      {
+        "nome": "Garça",
+        "imagem": "🦢"
+      },
+      {
+        "nome": "Mangue",
+        "imagem": "🌳"
+      },
+      {
+        "nome": "Peixe-boi",
+        "imagem": "🐋"
+      },
+      {
+        "nome": "Guará",
+        "imagem": "🦩"
+      },
+      {
+        "nome": "Sabiá",
+        "imagem": "🐦"
+      },
+      {
+        "nome": "Ostra",
+        "imagem": "🦪"
+      },
+      {
+        "nome": "Camarão",
+        "imagem": "🦐"
+      }
+    ]
+  },
+  "conexoes": {
+    "pares": [
+      {
+        "esquerda": "Caranguejo-uçá",
+        "direita": "Oxigena o solo fazendo buracos na lama"
+      },
+      {
+        "esquerda": "Garça-branca",
+        "direita": "Controla a população de peixes e crustáceos"
+      },
+      {
+        "esquerda": "Mangue-vermelho",
+        "direita": "Filtra a água salgada com suas raízes especiais"
+      },
+      {
+        "esquerda": "Peixe-boi",
+        "direita": "Limpa a vegetação aquática mantendo o ecossistema"
+      },
+      {
+        "esquerda": "Guará",
+        "direita": "Espalha sementes voando entre os mangues"
+      },
+      {
+        "esquerda": "Sabiá-da-praia",
+        "direita": "Controla insetos com seu canto e alimentação"
+      }
+    ]
+  }
+}

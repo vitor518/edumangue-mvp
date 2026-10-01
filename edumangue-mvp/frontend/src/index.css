@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-mare text-raiz font-sans antialiased; }
+  h1, h2, h3 { @apply font-display tracking-tight; }
+  :focus-visible { outline: 3px solid #E0AE38; outline-offset: 2px; }
+}
+
+@layer utilities {
+  .preserve-3d { transform-style: preserve-3d; }
+  .backface-hidden { backface-visibility: hidden; }
+  .rotate-y-180 { transform: rotateY(180deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
